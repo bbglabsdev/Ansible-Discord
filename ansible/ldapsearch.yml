@@ -49,6 +49,7 @@
         return_content: true
       register: ipa_user_info
 
-    - name: Set fact with user group names
-      set_stat: 
-        ipa_group_names: "{{ ipa_user_info.json.result.result.memberof_group | default([]) }}"
+    - name: Set artifact with user group names
+      set_stats:
+        data:
+          ipa_group_names: "{{ ipa_user_info.json.result.result.memberof_group | default([]) }}"
