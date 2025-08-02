@@ -1,0 +1,7 @@
+ansible/files/*
+ansible/templates/*
+ansible/test.yml
+ansible/playbook.yml
+inventory
+Starbase-Server.ovpn
+terraform/*
