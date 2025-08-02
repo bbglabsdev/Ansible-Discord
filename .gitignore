@@ -5,3 +5,4 @@ ansible/playbook.yml
 inventory
 Starbase-Server.ovpn
 terraform/*
+README.md
